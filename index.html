@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overscroll: scroll;
+    }
+
+    body {
+        font-size: 17px;
+        background-color: #354259;
+        color: #F24C4C;
+    }
+
+    #main {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-right: 17px;
+        box-sizing:content-box;
+        margin-top: 50px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times;
+    }
+
+    details {
+        width: 100%;
+        font-family: sans-serif;
+        border: 2px solid #7858A6;
+        padding: 5px;
+    }
+
+    details p {
+        padding: 20px;
+        color: #EF9F9F;
+        background: #827397;
+    }
+
+    summary {
+        padding: 20px;
+        border: 1px solid #FFE69A
+;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+    }
+
+    section {
+        max-width: 80%;
+        width: 100%;
+
+    }
+
+    a {
+        color: rgb(83, 99, 110);
+        text-decoration: none;
+    }
+
+    h3 {
+        margin: 10px;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        max-width: 175px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 5px solid rgb(179, 146, 84);
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 10px #92B4EC;
+    }
+
+    figcaption {
+        margin: 20px;
+        font-size: 20px;
+        width: 55%;
+    }
+
+    #title {
+        color: #FFD24C;
+    }
+
+    #tribute-info {
+        width: 50%;
+    }
+
+    @media screen and (max-width:600px) {
+        figcaption {
+            width: 80%;
+            font-size: 15px;
+        }
+
+        #tribute-info {
+            width: 100%;
+        }
+
+        #main {
+            margin-top: 0;
+        }
+    }
+</style>Mother_Teresa_1.jpg
+
+<body>
+    <main id="main"></main>
+    <center>
+        
+        <h1 id="title">MOTHER TERESA</h1>
+        <p>Saint Teresa of Calcutta</p>
+        <div class="img-div">
+            <figure>
+                <img src="images.jpeg" alt="" id="image" width="170" height="170">
+                <figcaption id="img-caption"><q><b>Mother Mary Teresa Bojaxhiu MC</b> in full Anjezë Gonxhe Bojaxhiu honoured in the Catholic Church as Saint Teresa of Calcutta,
+                    She was an Albanian-Indian Roman Catholic nun and missionary. 
+                    She was born on 26 August 1910,Skopje,North Macedonia--Died on 5 September 1997,Kolkata.
+                    then part of the Kosovo Vilayet of the Ottoman Empire.</q>
+                </figcaption>
+            </figure>
+        </div>
+        <section id="tribute-info">
+            <details>
+                <summary> What is Mother Teresa known for? </summary>
+                <p> Mother Teresa is known for her missionary work in helping the poor.
+                     She was an empathetic devout catholic nun whose mission was to lessen the mystery that sick and poor went through.
+                     She is considered to be the greatest humanitarian to have ever lived in the 20th century.
+                </p>
+            </details>
+            <details>
+                <summary> What organizatons was Mother Teresa associated with? </summary>
+                <p>"The Order of the Missionaries of Charity", an organization founded (1948) by Mother Teresa (recipient of the Nobel Peace Prize of 1979),
+                     cares for the blind, the elderly, the dying, and people afflicted with leprosy in the poorest sections of the city.
+                     There are several medical colleges, in addition to other medical research centres.
+                </p>
+            </details>
+            <h3>
+                Read more about "Mother Teresa"
+                <a id="tribute link" href="https://en.wikipedia.org/wiki/Mother_Teresa" target="_blank">'wikipedia'</a>
+            </h3>
+        </section>
+    </center>
+</body>
+
+</html>
